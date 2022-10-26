@@ -5,7 +5,7 @@ terraform {
     organization = "clouddoxaorg"
 
     workspaces {
-      name = "default"
+      name = "deploy-eks-dev"
     }
   }
 
