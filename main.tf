@@ -11,7 +11,8 @@ resource "aws_s3_bucket" "test" {
 resource "aws_security_group" "allow_tls" {
   name        = "a-allow-tls-test-7777"
   description = "Allow TLS inbound traffic"
-
+  vpc_id = "vpc-069ab62413303dad8"
+  
   ingress {
     description      = "TLS from VPC"
     from_port        = 443
