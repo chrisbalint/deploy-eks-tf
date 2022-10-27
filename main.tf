@@ -17,6 +17,6 @@ resource "aws_security_group" "allow_tls" {
     from_port        = 443
     to_port          = 443
     protocol         = "tcp"
-    cidr_blocks      = [var.cidr_blocks]
+    cidr_blocks      = var.cidr_blocks
   }
 }
